@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '@/styles/Home.module.css'
 import { Inter } from '@next/font/google'
+import GridElement from './gridElement'
 const inter = Inter({ subsets: ['latin'] })
 
 let gridListsDefault = [
@@ -23,21 +24,16 @@ let gridListsDefault = [
 
 export default function GridComponent(){
     
+    let elems = gridListsDefault.map(elem=>{
+        {console.log("elem: ", elem)}
+        return<GridElement href={elem.href} title={elem.title} description={elem.description} />
+    });
+
     return (
         <>
-        <div className={styles.grid}>
-        {gridListsDefault.forEach(gridList=>{
-            {console.log(gridList)}
-            <a href={gridList.href} className={styles.card} target="_blank" rel="noopener noreferrer">
-                <h2 className={inter.className}>
-                    {gridList.title} <span>-&gt;</span>
-                </h2>
-                <p className={inter.className}>
-                    {gridList.description}
-                </p>
-            </a>
-        })}   
-        </div>
+            <div className={styles.grid}>
+                {elems}
+            </div>
         </>
     )
 }
