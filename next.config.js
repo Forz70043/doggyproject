@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
-import withPWA from 'next-pwa'
-import { i18n } from './utils/i18n'
-
+/*
 const withPWA = require("next-pwa")({
   dest: "public",
 });
@@ -14,4 +12,4 @@ const nextConfig = {
   },
 }
 
-export default nextConfig
+export default nextConfig*/
