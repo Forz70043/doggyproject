@@ -1,7 +1,7 @@
 import {artist} from '../json/artists';
 import React from 'react'
 import styles from '@/styles/Home.module.css'
-
+import CenterTitle from '@/components/centerTitle';
 
 export const getStaticProps = async () => {
   return {
@@ -14,7 +14,7 @@ export const getStaticProps = async () => {
 const ArtistPage = () => {
   return (
     <>
-      <h1>Artist Page</h1>
+      <CenterTitle title="Artists"/>
       <p>Here you can find information about our artists.</p> 
     </>
   )

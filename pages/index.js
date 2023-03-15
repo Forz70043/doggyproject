@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Description />
-      <CenterTitle />
+      <CenterTitle title="Doggy Project"/>
       <GridComponent />  
     </>
   )
