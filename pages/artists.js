@@ -1,21 +1,30 @@
-import {artist} from '../json/artists';
+let artists = require('json/data.json');
 import React from 'react'
-import styles from '@/styles/Home.module.css'
-import CenterTitle from '@/components/centerTitle';
+
+import CenterTitle from '@/components/CenterTitle';
+import GridElement from '@/components/GridElement';
+
+console.log(artists);
 
 export const getStaticProps = async () => {
   return {
     props: {
-      artists: '',
+      artists: artists,
     },
   }
 }
 
-const ArtistPage = () => {
+const ArtistPage = (props) => {
+  console.log(props)
+  
   return (
     <>
       <CenterTitle title="Artists"/>
-      <p>Here you can find information about our artists.</p> 
+      <p>Here you can find information about our artists.</p>
+      {props.artists.map(elem => {
+        return <GridElement title={elem.aka}  />
+      })}
+      
     </>
   )
 }

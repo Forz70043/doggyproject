@@ -1,7 +1,6 @@
-
-import CenterTitle from '@/components/centerTitle'
-import Description from '@/components/description'
-import GridComponent from '@/components/gridComponent'
+import CenterTitle from '@/components/CenterTitle'
+import Description from '@/components/Description'
+import GridComponent from '@/components/GridComponent'
 
 
 export default function Home() {
