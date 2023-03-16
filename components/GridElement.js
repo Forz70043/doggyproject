@@ -10,16 +10,14 @@ export default function GridElement(props){
     }
     return (
         <>
-        
-            <a href={props.href} className={styles.card} target="_blank" rel="noopener noreferrer">
-            <h2 className={inter.className}>
-                    {props.title} <span>-&gt;</span>
+            <a href={props.href ?? ''} className={styles.card} target={props.target ?? "_blank"} rel={props.rel ?? 'noopener noreferrer'}>
+                <h2 className={inter.className}>
+                    {props.title ?? ''} <span>-&gt;</span>
                 </h2>
                 <p className={inter.className}>
-                    {props.description}
+                    {props.description ?? ''}
                 </p>
             </a>
-        
         </>
     )
 
