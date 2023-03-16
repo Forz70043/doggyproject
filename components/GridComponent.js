@@ -20,6 +20,11 @@ let gridListsDefault = [
         title: "Podcast",
         description: "Listen our Podcast"
     },
+    {
+        href: "/contact",
+        title: "Contatc",
+        description: "Contact us"
+    },
 ]
 
 export default function GridComponent(){
