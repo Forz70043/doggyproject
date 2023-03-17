@@ -1,5 +1,3 @@
-import Link from 'next/link'
-import { FormEvent } from 'react'
 import styles from '@/styles/Home.module.css'
 import React, { useState } from "react"
 
@@ -41,12 +39,12 @@ export default function ContactForm(props) {
 
         // POST the data to the URL of the form
         fetch(formURL, {
-          method: "POST",
-          headers: {
-            "Content-Type": 'application/json',
-            Accept: 'application/json',
-          },
-          body: JSON.stringify(formData)
+            method: "POST",
+            headers: {
+                "Content-Type": 'application/json',
+                Accept: 'application/json',
+            },
+            body: JSON.stringify(formData)
         })
         .then((response) => response.json())
         .then((data) => {
