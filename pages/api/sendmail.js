@@ -1,5 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-const nodemailer = require('nodemailer');
+//const nodemailer = require('nodemailer');
 
 export default function handler(req, res) {
   const message = {
@@ -10,7 +10,7 @@ export default function handler(req, res) {
     html: `<p>${req.body.message}</p>`,
   };
 
-  let transporter = nodemailer.createTransport({
+  /*let transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
       user: process.env.GMAIL_EMAIL_ADDRESS,
@@ -32,5 +32,5 @@ export default function handler(req, res) {
       }
     });
   }
-
+  */
 }
