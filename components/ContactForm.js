@@ -9,7 +9,7 @@ export default function ContactForm(props) {
         email: "",
         message: ""
     });
-    
+    const [isLoading, setLoading] = useState(false)
     const [formSuccess, setFormSuccess] = useState(false)
     const [formSuccessMessage, setFormSuccessMessage] = useState("")
     
@@ -25,57 +25,67 @@ export default function ContactForm(props) {
     
     const submitForm = (e) => {
         // We don't want the page to refresh
+        setLoading(true)
         e.preventDefault()
     
         const formURL = e.target.action
-        const data = new FormData()
-    
+        
+        console.log(formData);
+        console.log("js", JSON.stringify(formData));
+        
         // Turn our formData state into data we can use with a form submission
-        Object.entries(formData).forEach(([key, value]) => {
+        //let data = new FormData();
+        /*Object.entries(formData).forEach(([key, value]) => {
           data.append(key, value);
-        })
-    
+        })*/
+
         // POST the data to the URL of the form
         fetch(formURL, {
           method: "POST",
-          body: data,
           headers: {
-            'accept': 'application/json',
+            "Content-Type": 'application/json',
+            Accept: 'application/json',
           },
-        }).then((response) => response.json())
+          body: JSON.stringify(formData)
+        })
+        .then((response) => response.json())
         .then((data) => {
-          setFormData({ 
-            name: "", 
-            email: "", 
-            message: "" 
-          })
-    
-          setFormSuccess(true)
-          setFormSuccessMessage(data.submission_text)
+            setLoading(false);
+            setFormData({ 
+                name: "", 
+                email: "", 
+                message: "" 
+            })
+            console.log("rrr",data.data);
+            setFormSuccess(true)
+            setFormSuccessMessage(data.data)
         })
     }
+    if(isLoading) return <div id="loading"></div>
+    else if(formSuccess){
+        return (<><div>{formSuccessMessage}</div></>)
+    }
+    else
     return (
     <>
-        {formSuccess ? <div>{formSuccessMessage}</div> :
             <form method="POST" action="/api/form" onSubmit={submitForm}>
                 <div>
                     <label>Name</label>
-                    <input type="text" name="name" onChange={handleInput} value={formData.name} />
+                    <input type="text" name="name" onChange={handleInput} value={formData.name} required/>
                 </div>
 
                 <div>
                     <label>Email</label>
-                    <input type="text" name="email" onChange={handleInput} value={formData.email} />
+                    <input type="text" name="email" onChange={handleInput} value={formData.email} required/>
                 </div>
 
                 <div>
                     <label>Message</label>
-                    <textarea name="message" onChange={handleInput} value={formData.message}></textarea>
+                    <textarea name="message" onChange={handleInput} value={formData.message} minLength="15"></textarea>
                 </div>
 
                 <button type="submit">Send message</button>
             </form>
-        }
     </>
     )
       
