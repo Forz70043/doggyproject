@@ -30,7 +30,6 @@ let gridListsDefault = [
 export default function GridComponent(){
     
     let elems = gridListsDefault.map((elem, index) => {
-        {console.log("elem: ", elem)}
         return<GridElement key={index} href={elem.href} title={elem.title} description={elem.description} />
     });
 
