@@ -3,13 +3,13 @@
 const withPWA = require("next-pwa")({
   dest: "public",
 });
-
+*/
 const nextConfig = {
   reactStrictMode: true,
-  i18n: {
+  /*i18n: {
     locales: ['en', 'es', 'it'],
     defaultLocale: 'en',
-  },
+  },*/
 }
 
-export default nextConfig*/
+export default nextConfig
