@@ -1,4 +1,4 @@
-import artistCss from '@/styles/Artist.module.css';
+// import artistCss from '@/styles/Artist.module.css';
 import Image from 'next/image'
 
 

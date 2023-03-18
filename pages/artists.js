@@ -3,6 +3,7 @@ import React from 'react'
 import artistCss from '@/styles/Artist.module.css';
 import CenterTitle from '@/components/CenterTitle';
 import ArtistComponent from '@/components/Artist';
+import { useTranslation } from 'next-i18next';
 
 export const getStaticProps = async () => {
   return {
@@ -13,11 +14,12 @@ export const getStaticProps = async () => {
 }
 
 const ArtistPage = (props) => {
+  const {t} = useTranslation('common');
   
   return (
     <>
       <CenterTitle title="Artists"/>
-      <p>Here you can find information about our artists.</p>
+      <p>{t('Here you can find information about our artists.')}</p>
       
       <div className={artistCss.gridArtists} >
         {props.artists.map((elem, index) => {

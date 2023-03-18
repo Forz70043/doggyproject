@@ -1,12 +1,14 @@
-import styles from '@/styles/Home.module.css'
+// import styles from '@/styles/Home.module.css'
 import Image from 'next/image'
+import { useTranslation } from 'next-i18next'
 
 export default function centerTitle(props){
     //<h2 id="spaceGrotesk">{props.title ?? ''}</h2>
+    const {t} = useTranslation();
     return (
         <>
-        <div className={styles.center}>
-            <Image src="/logo_empty.png" alt="Doggy Logo" className={styles.thirteen} width={400} height={400} />
+        <div>
+            <Image src="/logo_empty.png" alt="Doggy Logo" width={400} height={400} />
         </div>
         </>
     )
