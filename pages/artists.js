@@ -1,34 +1,18 @@
-let artists = require('json/data.json');
-import React from 'react'
-import artistCss from '@/styles/Artist.module.css';
-import CenterTitle from '@/components/CenterTitle';
+
+import React from "react"
 import ArtistComponent from '@/components/Artist';
-import { useTranslation } from 'next-i18next';
+import Footer from "@/components/Footers/Footer"
+import Navbar from "@/components/Navbar"
 
-export const getStaticProps = async () => {
-  return {
-    props: {
-      artists: artists,
-    },
-  }
-}
 
-const ArtistPage = (props) => {
-  const {t} = useTranslation();
+export default function ArtistPage() {
   
+  //https://www.formbackend.com/f/664decaabbf1c319
   return (
-    <>
-      <CenterTitle title="Artists"/>
-      <p>{t('Here you can find information about our artists.')}</p>
-      
-      <div className={artistCss.gridArtists} >
-        {props.artists.map((elem, index) => {
-          return <ArtistComponent key={index} aka={elem.aka} description={elem.description} src={elem.src}/>
-        })}
-      </div>
-      
-    </>
+    <div>
+        <Navbar />
+        <ArtistComponent />
+        <Footer />
+    </div>
   )
 }
-
-export default ArtistPage
