@@ -8,7 +8,6 @@ export default function Contact() {
   //https://www.formbackend.com/f/664decaabbf1c319
   return (
     <div>
-        <Description />
         <ContactForm />
         <Footer />
     </div>
