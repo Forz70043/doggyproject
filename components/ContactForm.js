@@ -59,6 +59,7 @@ export default function ContactForm(props) {
             setFormSuccessMessage(data.data)
         })
     }
+
     if(isLoading) return <div id="loading"></div>
     else if(formSuccess){
         return (<><div>{formSuccessMessage}</div></>)
