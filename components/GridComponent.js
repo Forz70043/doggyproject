@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/Home.module.css'
+// import styles from '@/styles/Home.module.css'
 import { Inter } from '@next/font/google'
 import GridElement from './GridElement'
 const inter = Inter({ subsets: ['latin'] })
@@ -30,7 +30,7 @@ export default function GridComponent(){
 
     return (
         <>
-            <div className={styles.grid}>
+            <div className='flex flex-row'>
                 {elems}
             </div>
         </>
