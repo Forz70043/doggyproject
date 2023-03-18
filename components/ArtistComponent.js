@@ -3,33 +3,49 @@ let artists = require('json/data.json');
 import Image from "next/image";
 
 export default function ArtistComponent(props) {
-    
+
     return (
         <>
             <div className="bg-white dark:bg-slate-800 py-24 sm:py-32">
-                <div className="mx-auto grid max-w-7xl gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3">
-                    <div className="max-w-2xl">
-                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Meet our leadership</h2>
-                        <p className="mt-6 text-lg leading-8 dark:text-slate-400 text-gray-600">
-                            Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper
-                            suspendisse.
-                        </p>
-                    </div>
-                    <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-                        {artists.map((elem, index) => {
-                            return (
-                                <li key={index}>
-                                    <div className="flex items-center gap-x-6">
-                                        <img className="h-16 w-16 rounded-full" src={elem.src} alt="" />
-                                        <div>
-                                            <h3 className="text-base font-semibold leading-7 tracking-tight dark:text-white text-gray-900">{elem.aka}</h3>
-                                            <p className="text-sm font-semibold leading-6 dark:text-slate-400 text-gray-400">{elem.description}</p>
-                                        </div>
+                <div class="flex flex-row">
+                    {artists.map((elem, index) => {
+                        return (
+                            <div class="basis-1/2 mx-8 md:basis-1/2">
+                                <div
+                                    class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                                    <a href="#!">
+                                        <img
+                                            class="rounded-t-lg"
+                                            src={elem.src}
+                                            alt="" />
+                                    </a>
+                                    <div class="p-6">
+                                        <h5
+                                            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                                            {elem.aka}
+                                        </h5>
+                                        <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                                            {elem.description}
+                                        </p>
+                                        <a
+                                            href="#"
+                                            className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                        >
+                                            More...
+                                        </a>
+                                        {/* <button
+                                                type="button"
+                                                class="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                                data-te-ripple-init
+                                                data-te-ripple-color="light">
+                                                Button
+                                            </button> */}
                                     </div>
-                                </li>
-                            )
-                        })}
-                    </ul>
+                                </div>
+                            </div>
+                        )
+                    })}
+                    <div />
                 </div>
             </div>
         </>
