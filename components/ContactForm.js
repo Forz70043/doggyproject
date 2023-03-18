@@ -1,7 +1,6 @@
 // import styles from '@/styles/Home.module.css'
 import React, { useState } from "react"
-import { Switch, Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Switch } from '@headlessui/react'
 
 
 function classNames(...classes) {
@@ -133,7 +132,7 @@ export default function ContactForm(props) {
                                         name="firstname"
                                         id="firstname"
                                         autoComplete="given-name"
-                                        className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 dark:text-slate-400 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 dark:text-slate-200 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                         onChange={handleInput} value={formData.firstname} required
                                     />
                                 </div>
@@ -148,7 +147,7 @@ export default function ContactForm(props) {
                                         name="lastname"
                                         id="lastname"
                                         autoComplete="family-name"
-                                        className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 dark:text-slate-400 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 dark:text-slate-200 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                         onChange={handleInput} value={formData.lastname} required
                                     />
                                 </div>
@@ -177,7 +176,7 @@ export default function ContactForm(props) {
                                         name="email"
                                         id="email"
                                         autoComplete="email"
-                                        className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 dark:text-slate-400 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 dark:text-slate-200 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                         onChange={handleInput} value={formData.email} required
                                     />
                                 </div>
