@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <Navbar />
       <Description />
-      <CenterTitle/>
-      <GridComponent />
+      {/*<CenterTitle/>*/}
+      {/*<GridComponent />*/}
       <Footer />
     </>
   )
