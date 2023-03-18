@@ -16,13 +16,8 @@ let gridListsDefault = [
         description: "Find in-depth information about our artists."
     },
     {
-        href: "#",
-        title: "Podcast",
-        description: "Listen our Podcast"
-    },
-    {
         href: "/contact",
-        title: "Contatc",
+        title: "Contact",
         description: "Contact us"
     },
 ]
