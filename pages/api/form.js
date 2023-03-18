@@ -21,7 +21,7 @@ export default async function handler(req, res) {
 
   // Guard clause checks for first and last name,
   // and returns early if they are not found
-  if (!body.message || !body.email || !body.name) {
+  if (!body.message || !body.email || !body.firstname || !body.lastname) {
     // Sends a HTTP bad request error code
     return res.status(400).json({ data: 'Email or Text or name empty' })
   }
