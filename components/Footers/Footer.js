@@ -239,8 +239,8 @@ export default function Footer() {
                 y2="474.645"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#9089FC" />
-                <stop offset={1} stopColor="#FF80B5" />
+                <stop stopColor="#f7ff58" />
+                <stop offset={3} stopColor="#f7ff58" />
               </linearGradient>
             </defs>
           </svg>
