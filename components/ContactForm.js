@@ -87,7 +87,7 @@ export default function ContactForm(props) {
     else
         return (
             <>
-                <div className="isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
+                <div className="isolate bg-white dark:bg-slate-800 py-24 px-6 sm:py-32 lg:px-8">
                     <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
                         <svg
                             className="relative left-1/2 -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-40rem)] sm:h-[42.375rem]"
@@ -114,15 +114,15 @@ export default function ContactForm(props) {
                         </svg>
                     </div>
                     <div className="mx-auto max-w-2xl text-center">
-                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact</h2>
-                        <p className="mt-2 text-lg leading-8 text-gray-600">
+                        <h2 className="text-3xl font-bold dark:text-white tracking-tight text-gray-900 sm:text-4xl">Contact</h2>
+                        <p className="mt-2 text-lg dark:text-slate-400 leading-8 text-gray-600">
                             Aute magna irure deserunt veniam aliqua magna enim voluptate.
                         </p>
                     </div>
                     <form method="POST" action="/api/form" onSubmit={submitForm} className="mx-auto mt-16 max-w-xl sm:mt-20">
                         <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
                             <div>
-                                <label htmlFor="firstname" className="block text-sm font-semibold leading-6 text-gray-900">
+                                <label htmlFor="firstname" className="block dark:text-white text-sm font-semibold leading-6 text-gray-900">
                                     First name
                                 </label>
                                 <div className="mt-2.5">
@@ -137,7 +137,7 @@ export default function ContactForm(props) {
                                 </div>
                             </div>
                             <div>
-                                <label htmlFor="lastname" className="block text-sm font-semibold leading-6 text-gray-900">
+                                <label htmlFor="lastname" className="block text-sm dark:text-white font-semibold leading-6 text-gray-900">
                                     Last name
                                 </label>
                                 <div className="mt-2.5">
@@ -166,7 +166,7 @@ export default function ContactForm(props) {
                         </div>
                     </div> */}
                             <div className="sm:col-span-2">
-                                <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+                                <label htmlFor="email" className="block dark:text-white text-sm font-semibold leading-6 text-gray-900">
                                     Email
                                 </label>
                                 <div className="mt-2.5">
@@ -213,7 +213,7 @@ export default function ContactForm(props) {
                         </div>
                     </div> */}
                             <div className="sm:col-span-2">
-                                <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+                                <label htmlFor="message" className="block dark:text-white text-sm font-semibold leading-6 text-gray-900">
                                     Message
                                 </label>
                                 <div className="mt-2.5">
@@ -247,7 +247,7 @@ export default function ContactForm(props) {
                                         />
                                     </Switch>
                                 </div>
-                                <Switch.Label className="text-sm leading-6 text-gray-600">
+                                <Switch.Label className="text-sm leading-6 dark:text-slate-400 text-gray-600">
                                     By selecting this, you agreed to our{' '}
                                     <a href="#" className="font-semibold text-indigo-600">
                                         privacy&nbsp;policy
