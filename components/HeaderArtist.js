@@ -9,7 +9,7 @@ export default function HeaderArtist() {
                     class="mb-6 text-3xl font-bold text-neutral-800 dark:text-white dark:text-neutral-200">
                     Artists
                 </h2>
-                <p class=" dark:text-slate-400 text-gray-400 mb-6 pb-2 md:mb-12 md:pb-0">
+                <p class=" dark:text-slate-400 text-gray-400 md:pb-0">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
                     amet numquam iure provident voluptate esse quasi, veritatis totam
                     voluptas nostrum quisquam eum porro a pariatur veniam.
