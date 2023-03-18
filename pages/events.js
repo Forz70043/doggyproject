@@ -1,20 +1,17 @@
 import React from 'react'
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footers/Footer';
 import EventComponent from '@/components/EventComponent'
-import events from 'json/events';
 
-const EventsPage = () => {
+export default function() {
+
   return (
     <div>
-      <h1>Events Page</h1>
-      <p>Here you can find information about our upcoming events.</p><br/>
-      <div className='flex flex-col items-center'>
-        {events.map((elem, index) => {
-          return <EventComponent name={elem.name} description={elem.description} data={elem.data}/>
-        })}
-      </div>
-      
+      <Navbar />
+      <EventComponent />
+      <Footer />
     </div>
   )
 }
 
-export default EventsPage
+
