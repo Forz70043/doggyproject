@@ -57,13 +57,13 @@ export default function Navbar() {
                   <span className="sr-only">DoggyProject</span>
                   <img
                     className="h-8 w-auto"
-                    src="doggyprojectnuovo-01.png"
+                    src="logo_empty.png"
                     alt=""
                   />
                 </a>
                 <button
                   type="button"
-                  className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                  className="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-slate-400"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <span className="sr-only">Close menu</span>
@@ -77,7 +77,7 @@ export default function Navbar() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                        className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 dark:text-slate-400 hover:bg-gray-50"
                       >
                         {item.name}
                       </a>
