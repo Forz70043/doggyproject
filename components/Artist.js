@@ -1,16 +1,9 @@
 import React from "react"
 let artists = require('json/data.json');
-
-export const getStaticProps = async () => {
-    return {
-        props: {
-            artists: artists,
-        },
-    }
-}
+import Image from "next/image";
 
 export default function ArtistComponent(props) {
-
+    
     return (
         <>
             <div className="bg-white py-24 sm:py-32">
@@ -23,16 +16,18 @@ export default function ArtistComponent(props) {
                         </p>
                     </div>
                     <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-                        {props.artists.map((elem, index) => {
-                            <li key={index}>
-                                <div className="flex items-center gap-x-6">
-                                    <img className="h-16 w-16 rounded-full" src={elem.src} alt="" />
-                                    <div>
-                                        <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{elem.aka}</h3>
-                                        <p className="text-sm font-semibold leading-6 text-indigo-600">{elem.description}</p>
+                        {artists.map((elem, index) => {
+                            return (
+                                <li key={index}>
+                                    <div className="flex items-center gap-x-6">
+                                        <img className="h-16 w-16 rounded-full" src={elem.src} alt="" />
+                                        <div>
+                                            <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{elem.aka}</h3>
+                                            <p className="text-sm font-semibold leading-6 text-indigo-600">{elem.description}</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
+                                </li>
+                            )
                         })}
                     </ul>
                 </div>
