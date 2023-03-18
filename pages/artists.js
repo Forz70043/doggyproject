@@ -14,7 +14,7 @@ export const getStaticProps = async () => {
 }
 
 const ArtistPage = (props) => {
-  const {t} = useTranslation('common');
+  const {t} = useTranslation();
   
   return (
     <>
