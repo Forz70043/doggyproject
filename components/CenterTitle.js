@@ -3,8 +3,7 @@ import Image from 'next/image'
 import { useTranslation } from 'next-i18next'
 
 export default function centerTitle(props){
-    //<h2 id="spaceGrotesk">{props.title ?? ''}</h2>
-    const {t} = useTranslation();
+    //const {t} = useTranslation();
     return (
         <>
         <div>
