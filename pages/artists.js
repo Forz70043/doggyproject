@@ -3,7 +3,7 @@ import React from "react"
 import ArtistComponent from '@/components/ArtistComponent';
 import Footer from "@/components/Footers/Footer"
 import Navbar from "@/components/Navbar"
-import HeaderArtist from "@/components/HeaderArtist";
+import HeaderArtist from "@/components/HeaderComponent";
 
 
 export default function ArtistPage() {
@@ -11,7 +11,7 @@ export default function ArtistPage() {
   return (
     <div>
         <Navbar />
-        <HeaderArtist />
+        <HeaderArtist title="Artists" description="Our Artist"/>
         <ArtistComponent />
         <Footer />
     </div>
