@@ -31,7 +31,7 @@ export default function HeaderEvents(props) {
                     </svg>
                 </div>
                 <div className="mx-auto text-center md:max-w-xl lg:max-w-3xl">
-                    <h2 className="mb-6 text-3xl font-bold text-neutral-800 dark:text-white dark:text-neutral-200">
+                    <h2 className="mb-6 text-3xl font-bold text-neutral-800 dark:text-white">
                         {props.title ?? ''}
                     </h2>
                     <p className=" dark:text-slate-400 text-gray-400 md:pb-0">
