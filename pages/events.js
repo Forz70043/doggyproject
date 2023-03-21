@@ -10,7 +10,6 @@ export default function() {
 
   return (
     <div>
-      <Navbar />
       <HeaderEvents title="Events" description="Our events" />
       <EventComponent />
     </div>

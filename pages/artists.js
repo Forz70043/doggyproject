@@ -9,7 +9,6 @@ export default function ArtistPage() {
   
   return (
     <div>
-      <Navbar />
       <HeaderArtist title="Artists" description="Our Artist"/>
       <ArtistComponent />
     </div>
