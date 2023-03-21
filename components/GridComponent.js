@@ -1,5 +1,4 @@
 import React from 'react'
-// import styles from '@/styles/Home.module.css'
 import { Inter } from '@next/font/google'
 import GridElement from './GridElement'
 const inter = Inter({ subsets: ['latin'] })
