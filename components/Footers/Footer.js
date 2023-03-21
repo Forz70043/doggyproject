@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
   <>    
-  <footer className=" relative z-10 bg-white dark:bg-black pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+  <footer className=" relative z-10 bg-white dark:bg-black pt-20 pl-5 pb-10 lg:pt-[120px] lg:pb-20 sm:pb-12">
     <div className="container mx-auto">
       <div className="-mx-4 flex flex-wrap">
         {/* first section icon description telephone */}
