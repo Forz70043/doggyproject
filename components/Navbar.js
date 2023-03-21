@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { useTranslation } from 'next-i18next'
-const t = useTranslation();
+// import { useTranslation } from 'next-i18next'
+// const t = useTranslation();
 
 const navigation = [
   { name: 'Events', href: '/events' },
