@@ -1,4 +1,3 @@
-import { getStaticProps } from '@/pages/artists'
 import Head from 'next/head'
 
 
