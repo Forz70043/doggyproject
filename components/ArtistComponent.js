@@ -7,13 +7,13 @@ export default function ArtistComponent() {
     return (
         <>
             <div className="bg-white dark:bg-black py-24 sm:py-32">
-                <div classNameName="flex flex-row">
+                <div className="flex flex-row">
                     {artists.map((elem, index) => {
                         return (
-                            <div key={index} classNameName="basis-1/2 mx-8 md:basis-1/2">
-                                <div classNameName="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                            <div key={index} className="basis-1/2 mx-8 md:basis-1/2">
+                                <div className="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
                                     <a href="#!">
-                                        <Image classNameName="rounded-t-lg" src={elem.src} alt="Image DJ" width={320} height={240} />
+                                        <Image className="rounded-t-lg" src={elem.src} alt="Image DJ" width={320} height={240} />
                                     </a>
                                     <div class="p-6">
                                         <h5
