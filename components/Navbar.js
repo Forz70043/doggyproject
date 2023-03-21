@@ -5,12 +5,12 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 // const t = useTranslation();
 
 const navigation = [
-  { name: 'Events', href: '/events' },
-  { name: 'Artist', href: '/artists' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Events', href: '/events', currentPage: false },
+  { name: 'Artists', href: '/artists', currentPage: false },
+  { name: 'Contacts', href: '/contact', currentPage: false },
 ]
 
-export default function Navbar() {
+export default function Navbar(props) {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
       <div className="bg-white dark:bg-black">
