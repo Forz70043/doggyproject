@@ -13,7 +13,6 @@ export default function() {
       <Navbar />
       <HeaderEvents title="Events" description="Our events" />
       <EventComponent />
-      <Footer />
     </div>
   )
 }
