@@ -1,5 +1,5 @@
 import Header from './Header'
-// import styles from '@/styles/Home.module.css'
+import Footer from '@/components/Footers/Footer'
 
 export default function Layout({children}){
     return (
@@ -8,6 +8,7 @@ export default function Layout({children}){
         <main>
             {children}
         </main>
+        <Footer />
         </>
     )
 }
