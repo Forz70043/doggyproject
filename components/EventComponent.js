@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function EventComponent(props) {
     return (
         <>
-        <div className="bg-white dark:bg-slate-800 py-24 sm:py-32 flex flex-col items-center">
+        <div className="bg-white dark:bg-black py-24 sm:py-32 flex flex-col items-center">
             {events.map((elem, index) => {
                 return (
                     <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 my-3">

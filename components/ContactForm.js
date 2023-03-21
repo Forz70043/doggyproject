@@ -88,7 +88,7 @@ export default function ContactForm(props) {
     else
         return (
             <>
-                <div className="isolate bg-white dark:bg-slate-800 py-24 px-6 sm:py-32 lg:px-8">
+                <div className="isolate bg-white dark:bg-black py-24 px-6 sm:py-32 lg:px-8">
                     <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
                         <svg
                             className="relative left-1/2 -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-40rem)] sm:h-[42.375rem]"

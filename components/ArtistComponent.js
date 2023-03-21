@@ -6,7 +6,7 @@ export default function ArtistComponent(props) {
 
     return (
         <>
-            <div className="bg-white dark:bg-slate-800 py-24 sm:py-32">
+            <div className="bg-white dark:bg-black py-24 sm:py-32">
                 <div className="flex flex-row">
                     {artists.map((elem, index) => {
                         return (

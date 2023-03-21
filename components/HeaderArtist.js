@@ -3,7 +3,7 @@
 export default function HeaderArtist() {
 
     return (
-        <div className="bg-white dark:bg-slate-800 pt-24 px-6">
+        <div className="bg-white dark:bg-black pt-24 px-6">
             <div className="relative isolate px-6 pt-14 lg:px-8">
                 <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
                     <svg
