@@ -1,3 +1,9 @@
 {
-    "Here you can find information about our artists.": "Here you can find information about our artists."
+    "DP_ARTIST_DESCRIPTION": "Here you can find information about our artists.",
+    "DP_ABOUT_DESCRIPTION":"Doggy Project nació del deseo de difundir una cultura musical y artística con el objetivo de crear una mezcla que puede unir a diferentes generaciones. Durante los últimos años hemos tratado de entender, viajando, estudiando y participando activamente en eventos, cómo dar algo diferente y alternativo a los interesados en este mundo. Bueno, ¡hoy podemos hacer todo esto! Nuestro concepto combina música y arte en un solo núcleo creativo",
+    "NAVBAR_EVENTS":"Events",
+    "NAVBAR_CONTACT":"Contact",
+    "NAVBAR_ABOUT":"About",
+    "NAVBAR_ARTISTS":"Artists"
+
 }
