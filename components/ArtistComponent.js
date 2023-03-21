@@ -6,16 +6,16 @@ export default function ArtistComponent() {
 
     return (
         <>
-            <div className="bg-white dark:bg-slate-800 py-24 sm:py-32">
-                <div className="flex flex-row">
+            <div className="bg-white dark:bg-black py-24 sm:py-32">
+                <div classNameName="flex flex-row">
                     {artists.map((elem, index) => {
                         return (
-                            <div key={index} className="basis-1/2 mx-8 md:basis-1/2">
-                                <div className="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                            <div key={index} classNameName="basis-1/2 mx-8 md:basis-1/2">
+                                <div classNameName="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
                                     <a href="#!">
-                                        <Image className="rounded-t-lg" src={elem.src} alt="Image DJ" width={320} height={240} />
+                                        <Image classNameName="rounded-t-lg" src={elem.src} alt="Image DJ" width={320} height={240} />
                                     </a>
-                                    <div className="p-6">
+                                    <div class="p-6">
                                         <h5
                                             className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
                                             {elem.aka}
@@ -28,7 +28,7 @@ export default function ArtistComponent() {
                                         </a>} */}
                                         {/* <button
                                                 type="button"
-                                                class="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                                className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
                                                 data-te-ripple-init
                                                 data-te-ripple-color="light">
                                                 Button
