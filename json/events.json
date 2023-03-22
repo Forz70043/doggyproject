@@ -3,24 +3,28 @@
         "name": "Evento disco 1",
         "site": "Villa Lanzarone",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "date": "11/05/2023"
+        "date": "11/05/2023",
+        "src": "/event1.jpg"
     },
     {
-        "name": "Evento disco 1",
+        "name": "Evento disco 2",
         "site": "Villa Lanzarone",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "date": "11/05/2023"
+        "date": "11/05/2023",
+        "src": "/event2.jpg"
     },
     {
-        "name": "Evento disco 1",
+        "name": "Evento disco 3",
         "site": "Villa Lanzarone",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "date": "11/05/2023"
+        "date": "11/05/2023",
+        "src": "/event3.jpg"
     },
     {
-        "name": "Evento disco 1",
+        "name": "Evento disco 4",
         "site": "Villa Lanzarone",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "date": "11/05/2023"
+        "date": "11/05/2023",
+        "src": "/event4.jpg"
     }
 ]
