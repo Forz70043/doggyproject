@@ -161,7 +161,7 @@ export default function ContactForm(props) {
                     <div
                         className="mt-12 mb-12 rounded-lg bg-green-100 py-5 px-6 text-base text-green-700"
                         role="alert">
-                        {"Message" + formSuccessMessage}
+                        {"Alert:" + formSuccessMessage}
                     </div>
                 </div>
             </div>
