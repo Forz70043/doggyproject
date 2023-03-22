@@ -9,7 +9,7 @@ export default function ArtistComponent() {
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
                         {artists.map((elem, index) => (
-                            <div className="mb-6 lg:mb-0">
+                            <div key={index} className="mb-6 lg:mb-0">
                                 <div className="bg-white dark:bg-gray-800 block rounded-lg shadow-lg">
                                     <div className="relative overflow-hidden bg-no-repeat bg-cover">
                                         <img src={elem.src} className="w-full rounded-t-lg" />
@@ -24,8 +24,8 @@ export default function ArtistComponent() {
                                         </svg> */}
                                     </div>
                                     <div className="p-6">
-                                        <h5 className="text-lg font-bold mb-4">{elem.name}</h5>
-                                        <p className="text-gray-500 mb-4">{"@" + elem.aka}</p>
+                                        <h5 className="text-lg font-bold mb-4">{elem.aka}</h5>
+                                        {/* {<p className="text-gray-500 mb-4">{"@" + elem.aka}</p>} */}
                                         <p className="text-gray-500 mb-4">{elem.description.substr(0, 200)+'...'}</p>
                                         <ul className="list-inside flex mx-auto justify-center">
                                             <a href="#!" className="px-2">
