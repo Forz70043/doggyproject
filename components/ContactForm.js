@@ -117,7 +117,7 @@ export default function ContactForm(props) {
                     </p>
                 </div>
                 <div
-                    class="mb-4 rounded-lg bg-success-100 py-5 px-6 text-base text-success-700"
+                    className="mb-4 rounded-lg bg-success-100 py-5 px-6 text-base text-success-700"
                     role="alert">
                     {formSuccessMessage}
                 </div>
