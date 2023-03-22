@@ -5,6 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 // const t = useTranslation();
 
 const navigation = [
+  { name: 'Home', href: '/', currentPage: true },
   { name: 'Events', href: '/events', currentPage: false },
   { name: 'Artists', href: '/artists', currentPage: false },
   { name: 'Contacts', href: '/contact', currentPage: false },
@@ -32,7 +33,7 @@ export default function Navbar(props) {
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
               {navigation.map((item, index) => (
-                <a key={index} href={item.href} className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
+                <a key={index} href={item.href} className={ item.currentPage ? "text-yellow-400 dark:text-yellow-200" : "" + "text-sm font-semibold leading-6 text-gray-900 dark:text-white"}>
                   {item.name}
                 </a>
               ))}
