@@ -19,7 +19,7 @@ export default function EventComponent() {
                                         <div class="flex flex-col justify-start p-6">
                                             <h5
                                                 class="mb-2 text-xl font-medium text-neutral-800 dark:text-neutral-50">
-                                                {elem.name}
+                                                {elem.name + " - " + elem.date} 
                                             </h5>
                                             <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
                                                 {elem.description}
