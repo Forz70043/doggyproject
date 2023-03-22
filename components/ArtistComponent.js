@@ -54,7 +54,7 @@ export default function ArtistComponent() {
                                     </div> */}
                                         <div className="mb-2 text-blueGray-600 mt-5">
                                             <i className="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>
-                                            {"@"+elem.aka}
+                                            {"@" + elem.aka}
                                         </div>
                                         {/* <div className="mb-2 text-blueGray-600">
                                         <i className="fas fa-university mr-2 text-lg text-blueGray-400"></i>
@@ -68,12 +68,12 @@ export default function ArtistComponent() {
                                                     {elem.description.substr(0, 100)}
                                                 </p>
                                                 <a
-                                            href="#"
-                                            className="font-normal text-lightBlue-500"
-                                            onClick={(e) => e.preventDefault()}
-                                            >
-                                            Show more
-                                            </a>
+                                                    href="#"
+                                                    className="font-normal text-lightBlue-500"
+                                                    onClick={(e) => e.preventDefault()}
+                                                >
+                                                    Show more
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
