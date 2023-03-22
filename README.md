@@ -35,6 +35,7 @@ To learn more about Next.js, take a look at the following resources:
 ## CSS TailwindCSS
 To learn more about Tailwindcss, take a look at the following  resources:
 - [TailwindCSS](https://tailwindui.com/components?ref=sidebar) - learn about tailwindcss
+- [TailwindElements](https://tailwind-elements.com/docs/standard/components/accordion/) - learn about default elements
 
 ## Deploy on Vercel
 
