@@ -1,4 +1,3 @@
-=======
 # doggyproject
 Doggy Project Website
 
